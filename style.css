@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+html{
+font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,rgb(55, 180, 230),rgb(230, 59, 207));
+}
+.section{
+    max-width: 100%;
+    min-height: fit-content;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: orange;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+.navbar ul{
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-right: 2.5rem;
+    
+}
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+     text-decoration: none;
+     color: whitesmoke;
+     font-size: 1.4rem;
+     font-weight: 600;
+     font-family:'Roboto', sans-serif ;
+     
+}
+.hero #icon{
+  display: none;
+  cursor: pointer;
+    
+}
+.navbar ul li a:hover{
+    color: orange;
+    cursor: pointer;
+}
+.about{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about h1{
+    font-size: 6vh;
+    color: orange;
+}
+.about p{
+    font-size: 3vh;
+    padding-left: 2rem;
+    color: whitesmoke;
+}
+@media(max-width:800px){
+    .navbar ul {
+      height: 100vh;
+      position: fixed; 
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      transition: top 1s ease;
+      display:none ;
+    }
+  .hero #icon{
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        font-size: 4vh;
+        color: whitesmoke;
+    }
+}
