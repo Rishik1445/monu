@@ -84,7 +84,7 @@ body{
       align-items: center;
       background: black;
       transition: top 1s ease;
-      display:none ;
+      /* display:none ; */
     }
   .hero #icon{
         display: block;
